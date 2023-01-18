@@ -3,6 +3,12 @@
 #FORGEROCK_ISS: https://iam-cdt.maersk.com/acm/oauth2/mau
 #FORGEROCK_KEYSTORE: https://api-cdt.maersk.com/oauth2/jwks?provider=ciam
 
+spring:
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
 azure:
   storage:
     container-name: storage-service
