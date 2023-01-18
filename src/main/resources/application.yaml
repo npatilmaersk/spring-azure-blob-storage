@@ -1,0 +1,24 @@
+
+#Configuration file where we used to keep DB and external service call and Jwt related info
+#FORGEROCK_ISS: https://iam-cdt.maersk.com/acm/oauth2/mau
+#FORGEROCK_KEYSTORE: https://api-cdt.maersk.com/oauth2/jwks?provider=ciam
+
+azure:
+  storage:
+    container-name: storage-service
+  storage.account-name: claimscheckpayloads
+  storage.account-key: 8OD1vjEqe7ux9m7UiBWImDMfmsWfu52rjkdsHoQ6gUrDyNThUt9U7UDeeEZWssp/IaVWv/CTXv8spi0Kug9gpA==
+  storage.blob-endpoint: https://claimscheckpayloads.blob.core.windows.net
+
+#  spring:
+#    #  profiles:     #too pas by pass jwt plz use this profile only for local testing and for integration testing
+#    #    active: integrationTest
+#    security:
+#      oauth2:
+#        resourceserver:
+#          jwt:
+#            issuer-uri: ${FORGEROCK_ISS}
+#            audience: bca001
+#            jwk-set-uri: ${FORGEROCK_KEYSTORE}
+#            jws-algorithm: RS256
+#            secret-key: vtshV6vQk2cWgFyC
